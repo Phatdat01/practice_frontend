@@ -100,6 +100,16 @@
     display: none;
 }
 
+.header__notice::before{
+    content: "";
+    border-width: 30px;
+    border-style:  solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -45px;
+    right: 0px;
+}
+
 .header__has-notice:hover .header__notice{
     display: block;
 }
@@ -136,6 +146,7 @@
     align-items: center;
     text-decoration: none;
     width: 100%;
+    justify-content: space-evenly;
 }
 
 .header__notice-link:hover{
