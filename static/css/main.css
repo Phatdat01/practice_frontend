@@ -1,38 +1,3 @@
-:root{
-    --white-color: #fff;
-    --black-color: #000;
-    --text-color: #333;
-}
-
-*{
-    box-sizing: inherit;
-}
-
-html{
-    font-size: 62.5%;
-    line-height: 1.6rem;
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0px;
-}
-
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width{
-    width: 100%;
-}
-
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .header{
     height: 120px;
     background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -86,10 +51,37 @@ body{
     width: 130px;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 130%;
     background-color: var(--white-color);
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in .3s;
+}
+
+.header__qr::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    top:-10px;
+    left:0;
+}
+
+/* áp dụng cho header__qr khi hover  header__has-qr*/
+.header__has-qr:hover .header__qr{
+    display: block;
+}
+
+.header__qr-img{
+    width: 100%;
+}
+
+.header__qr-download-img{
+    height: 23px;
 }
 
 .header__qr-apps{
-
+    display: flex;
+    justify-content: space-between;
 }
