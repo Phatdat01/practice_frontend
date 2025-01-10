@@ -188,3 +188,155 @@
     padding-block: 8px;
     cursor: pointer;
 }
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal__body{
+    width: 300px;
+    height: 300px;
+    background: var(--white-color);
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+}
+
+.auth-form{
+    padding: 0 20px;
+    width: 100%;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+.auth-form__switch{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.auth-form__switch:hover{
+    cursor: pointer;
+}
+
+.auth-form__input{
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--black-color);
+    border-radius: 2px;
+}
+
+.auth-form__input:focus{
+    border-color: #888;
+}
+
+.auth-form__aside{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.auth-form__policy-text{
+    color: var(--primary-color);
+}
+
+.auth-form__controls{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__controls > button{
+    height: 36px;
+    justify-content: center;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-form__controls-register, 
+.auth-form__controls-login{
+    background: var(--primary-color);
+    color: var(--white-color);
+    margin-left: 5px;
+}
+
+.auth-form__social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.auth-form__controls--with-icon-login{
+    background: #f5f5f5;
+    margin-block: 5px;
+    border-radius: 2px;
+    height: 30px;
+    align-content: center;
+}
+
+.auth-form__controls--with-icon{
+    background: #f5f5f5;
+    padding: 8px;
+    margin-block: 5px;
+    border-radius: 2px;
+}
+
+.auth-form__controls-facebook{
+    color: var(--white-color);
+    background: #3A5A98;
+    width: 48%;
+}
+
+.auth-form__controls-google{
+    color:#666;
+    width: 48%;
+}
+
+.auth-form__controls--with-icon-login{
+    width: 30%;
+}
+
+
+.auth-form__action{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__action-forget{
+    color: var(--primary-color);
+}
+
+.auth-form__action-help{
+    margin-left: 10px;
+}
+
+.auth-form__controls-sms{
+    background: #10850a;
+    color: white;
+}
