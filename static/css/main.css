@@ -1,6 +1,6 @@
 .header{
     height: 120px;
-    background-image: linear-gradient(0, #fe6433, #f53e2d);
+    background-image: linear-gradient(0, #b52315, #d72b2b);
 }
 
 .header__navbar{
@@ -84,4 +84,96 @@
 .header__qr-apps{
     display: flex;
     justify-content: space-between;
+}
+
+.header__notice{
+    position: absolute;
+    top: 51px;
+    width: 200px;
+    left: 50%;
+    width: 404px;
+    background-color: var(--white-color);
+    flex-direction: column;
+    /* Định vị tâm */
+    transform-origin: top right;
+    animation: headerNotice ease-in 0.2s;
+    display: none;
+}
+
+.header__has-notice:hover .header__notice{
+    display: block;
+}
+
+@keyframes headerNotice {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.header__notice-header{
+    cursor: default;
+}
+
+.header__notice-header h3{
+    color: #666;
+    margin: 0;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.header__notice-link--viewed{
+    background-color: rgba(215,43,43, 0.08);
+}
+
+.header__notice-link{
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.header__notice-link:hover{
+    background: #f7f7f7;
+}
+
+.header__notice-img{
+    width: 48px;
+    height: 30px;
+}
+
+.header__notice-info{
+    width: 60%;
+    margin-left: 12px;
+}
+
+.header__notice-info-name{
+    display: block;
+    font-size: 14px;
+    color: var(--black-color);
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.header__notice-info-des{
+    display: block;
+    font-size: 12px;
+    color: #756FE3;
+}
+
+.header__notice-footer{
+    text-align: center;
+}
+
+.header__notice-all{
+    text-decoration: none;
+    padding: 4px 16px;
+    color: var(--black-color);
+    padding-block: 8px;
+    cursor: pointer;
 }
