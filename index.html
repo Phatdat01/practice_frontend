@@ -1,158 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Phần đầu -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
-    <!-- <style>
-        h1{
-            color: yellow;
-            font-size: 100px;
-        }
-    </style> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-</head>
-<!-- Phần thân -->
 <body>
-    <!-- Header login -->
-    <div class="box box1" style="display: flex;">
-        <div class="left-nav">
-            <i class="fa fa-home"></i>
-            Trang chủ
-        </div>
-        <div class="right-nav" style="display: flex;">
-            <div class="login">Đăng nhập</div>
-            <div class="register">Đăng ký</div>
-        </div>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__nav-list">
+                        <a href="/" class="header__nav-item header__has-qr header__nav-item--separate">
+                            Home Page
+                            <!-- QR hover -->
+                            <div class="header__qr">
+                                <img src="static/uploads/qr.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                        <img src="https://www.codot.gov/safety/impaired-driving/planahead/2011-assets/android-market-icon.png/@@images/image" alt="GG Play" class="header__qr-download-img">
+                                        <img src="https://banner2.cleanpng.com/20180811/byt/1450168e13161f627efe482020d85224.webp" alt="App store" class="header__qr-download-img">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://facebook.com" class="header__nav-item header__nav-icon">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            Facebook
+                        </a>
+                    </ul>
+                    <ul class="header__nav-list header__has-notice">
+                        <a class="header__nav-item header__nav-icon">
+                            <i class="fa-solid fa-bell"></i>
+                            Notice
+                            <div class="header__notice">
+                                <header class="header__notice-header">
+                                    <h3>Thông báo mới</h3>
+                                </header>
+                                <a class="header__notice-link header__notice-link--viewed" href="">
+                                    <span>
+                                        <img class="header__notice-img" src="https://photo.znews.vn/w660/Uploaded/gtnzjz/2019_05_30/IMG_0606.jpg" alt="Ảnh tb">
+                                    </span>
+                                    <div class="header__notice-info">
+                                        <div class="header__notice-info-name">Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+                                        <div class="header__notice-info-des">Sự xuất hiện trong thời kỳ đầu tiên của nó trên Trái Đất là do các hoạt động quang hợp của vi khuẩn kỵ khí (vi khuẩn cổ và vi khuẩn). Sự phổ biến của nó từ sau đó đến ngày nay là do hoạt động quang hợp của tảo biển. Oxy là nguyên tố phổ biến xếp hàng thứ 3 trong vũ trụ theo khối lượng sau hydro và heli[6] và là nguyên tố phổ biến nhất theo khối lượng trong vỏ Trái Đất,[7] chiếm gần một nửa vỏ Trái đất ở dạng</div>
+                                    </div>
+                                </a>
+                                <a class="header__notice-link" href="">
+                                    <span>
+                                        <img class="header__notice-img" src="https://ispacedanang.edu.vn/wp-content/uploads/2024/05/hinh-anh-dep-ve-hoc-sinh-cap-3-1.jpg" alt="Ảnh tb">
+                                    </span>
+                                    <div class="header__notice-info">
+                                        <div class="header__notice-info-name">Hi</div>
+                                        <div class="header__notice-info-des">Mình là Tran</div>
+                                    </div>
+                                </a>
+                                <a class="header__notice-link" href="">
+                                    <span>
+                                        <img class="header__notice-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwByCApQDaZIP3CSO4tyq084FHPk09uwro2w&s" alt="Ảnh tb">
+                                    </span>
+                                    <div class="header__notice-info">
+                                        <div class="header__notice-info-name">Hello</div>
+                                        <div class="header__notice-info-des">Tôi là A</div>
+                                    </div>
+                                </a>
+                                <footer class="header__notice-footer">
+                                    <a class="header__notice-all">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </a>
+                        <a class="header__nav-item header__nav-icon">
+                            <i class="fa-solid fa-question"></i>
+                            Help
+                        </a>
+                        <a class="header__nav-item header__nav-icon header__nav-item--strong header__nav-item--separate">Login</a>
+                        <a class="header__nav-item header__nav-item--strong">Register</a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">container</div>
+        <footer>
+            <nav class="footer__navbar">footer</nav>
+        </footer>
     </div>
-    <H1>
-        Hello World!
-    </H1>
-    <div class="toast">
-        <div class="toast__next">
-            <div class="toast__icon">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </div>
-            <div class="toast__title">
-                Đây là Next
-            </div>
-        </div>
-        <div class="toast__success">
-            <div class="toast__icon">
-                <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-            <div class="toast__title">
-                Đây là Ok
-            </div>
-        </div>
-        <div class="toast__error">
-            <div class="toast__icon">
-                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-            </div>
-            <div class="toast__title">
-                Đây là Error
-            </div>
-        </div>
-    </div>
+    <!-- POP UP -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Register -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">
+                        Register
+                    </h3>
+                    <div class="auth-form__switch">Login</div>
+                </div>
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="username">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="password">
+                    </div>
 
-    <!-- Scroll -->
-    <h3>Show product by scroll</h3>
-    <div class="list-item-scroll">
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 1</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 2</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 3</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 4</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 5</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 6</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 1</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 2</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 3</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 4</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 5</span></div>
-        </div>
-        <div class="item">
-            <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-            <div class="name-item"><span>Sản phẩm 6</span></div>
-        </div>
-    </div>
-    <h3>Show product by grid</h3>
-    <div class="container" style="display: flex;">
-        <div class="row col-sm-12">
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 1</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 2</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 3</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 4</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 5</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 6</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 1</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 2</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm 3</span></div>
-            </div>
-            <div class="col-sm-6 col-md-3 item-child">
-                <div class="img-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnvqj-osNULi440CO8PQiRFvsJwOLQK0Z6w&s"/></div>
-                <div class="name-item"><span>Sản phẩm </span></div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy">
+                            By Register, You accept
+                            <a href="" class="auth-form__policy-text">Policy</a> &
+                            <a href="" class="auth-form__policy-text">Security</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="auth-form__controls-return">Return</button>
+                        <button class="auth-form__controls-register">Register</button>
+                    </div>
+
+                    <div class="auth-form__social">
+                        <a class="auth-form__controls--with-icon auth-form__controls-facebook">
+                            <i class="fab fa-facebook-square"></i>
+                            Connect Facebook
+                        </a>
+                        <a class="auth-form__controls--with-icon auth-form__controls-google">
+                            <i class="fab fa-google"></i>
+                            Connect Google
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Login -->
+            <div class="auth-form">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">
+                        Login
+                    </h3>
+                    <div class="auth-form__switch">Register</div>
+                </div>
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="username">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="password">
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__action">
+                            <a href="" class="auth-form__action-forget">Foget password</a>
+                            <a href="" class="auth-form__action-help">Help?</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="auth-form__controls-return">Return</button>
+                        <button class="auth-form__controls-login">Login</button>
+                    </div>
+
+                    <div class="auth-form__social">
+                        <a class="auth-form__controls--with-icon-login auth-form__controls-sms">
+                            <i class="fab fa-facebook-square"></i>
+                            Connect SMS
+                        </a>
+                        <a class="auth-form__controls--with-icon-login auth-form__controls-facebook">
+                            <i class="fab fa-facebook-square"></i>
+                            Connect Facebook
+                        </a>
+                        <a class="auth-form__controls--with-icon-login auth-form__controls-google">
+                            <i class="fab fa-google"></i>
+                            Connect Google
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
