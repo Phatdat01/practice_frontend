@@ -22,6 +22,7 @@
     height: 40px;
     border-radius: 2px 0 0 2px;
     background: var(--white-color);
+    position: relative;
 }
 
 .header__cart{
@@ -29,9 +30,26 @@
     text-align: center;
 }
 
+.header__cart-wrap{
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.header__cart-wrap:hover .header__cart-list{
+    display: block;
+}
+
 .header__cart-icon{
     font-size: 2.2rem;
     color: var(--white-color);
+}
+
+/* Focus */
+
+.header__search-input:focus ~ .header__search-info{
+    display: block;
 }
 
 .header__search-input{
@@ -57,4 +75,86 @@
 
 .header__search-btn:hover{
     background: #d55656;
+}
+
+.header__search-info{
+    width: 100%;
+    margin-top: 2px;
+    border-radius: 2px;
+    background: var(--white-color);
+    position: absolute;
+    top:100%;
+    box-shadow: 0 1px 3px #999;
+    display: none;
+}
+
+.header__search-item{
+    width: 100%;
+    display: flex;
+    border-radius: 2px;
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__search-item:hover{
+    background: #f7f7f7;
+}
+
+.header__search-heading{
+    margin: 8px 12px;
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: 400;
+    cursor:default;
+}
+
+.header__search-previous {
+    flex: 1;
+}
+
+.header__search-del {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__cart-list{
+    position: absolute;
+    top: 140%;
+    right: -10px;
+    width: 300px;
+    height: 200px;
+    background: var(--white-color);
+    box-shadow: 0 2px 10px #999;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header__cart-list::after{
+    content: "";
+    position: absolute;
+    border-width: 20px 30px;
+    right: 4px;
+    top: -30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.header__cart-no-list{
+    padding: 28px 0;
+}
+
+.header__cart-no-cart-img{
+    width: 50%;
+    height: 90%;
+    opacity: 0.2;
+}
+
+.header__cart-list-cart-mess{
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 12px;
 }

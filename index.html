@@ -86,13 +86,38 @@
                     </div>
                     <div class="header__search-select">
                         <input type="text" class="header__search-input" placeholder="Searching">
+                        <div class="header__search-info">
+                            <div class="header__search-heading">Search history</div>
+                            <li class="header__search-item">
+                                <a class="header__search-previous">Human</a>
+                                <div class="header__search-del">
+                                    <i class="header__search-del-icon fa-solid fa-x"></i>
+                                </div>
+                            </li>
+                            <li class="header__search-item">
+                                <a class="header__search-previous">Warehouse</a>
+                                <div class="header__search-del">
+                                    <i class="header__search-del-icon fa-solid fa-x"></i>
+                                </div>
+                            </li>
+                        </div>
                     </div>
                     <button class="header__search-btn">
                         Seach
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                     <div class="header__cart">
-                        <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                            
+                            <!-- Cart layout -->
+                            <div class="header__cart-list header__cart-no-list">
+                                <img src="https://cdn-icons-png.flaticon.com/512/102/102661.png" alt="No cart" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-cart-mess">
+                                    No product
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
