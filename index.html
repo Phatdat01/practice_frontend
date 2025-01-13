@@ -32,12 +32,12 @@
                         </a>
                     </ul>
                     <ul class="header__nav-list header__has-notice">
-                        <a class="header__nav-item header__nav-icon">
-                            <i class="fa-solid fa-bell"></i>
-                            Notice
+                        <div class="header__nav-item header__nav-icon header__action-notice">
+                                <i class="fa-solid fa-bell"></i>
+                                Notice
                             <div class="header__notice">
                                 <header class="header__notice-header">
-                                    <h3>Thông báo mới</h3>
+                                    <h3>Notice</h3>
                                 </header>
                                 <a class="header__notice-link header__notice-link--viewed" href="">
                                     <span>
@@ -70,13 +70,30 @@
                                     <a class="header__notice-all">Xem tất cả</a>
                                 </footer>
                             </div>
-                        </a>
+                        </div>
                         <a class="header__nav-item header__nav-icon">
                             <i class="fa-solid fa-question"></i>
                             Help
                         </a>
-                        <a class="header__nav-item header__nav-icon header__nav-item--strong header__nav-item--separate">Login</a>
-                        <a class="header__nav-item header__nav-item--strong">Register</a>
+                        <!-- <a class="header__nav-item header__nav-icon header__nav-item--strong header__nav-item--separate">Login</a>
+                        <a class="header__nav-item header__nav-item--strong">Register</a> -->
+
+                        <li class="header__nav-item header__navbar-user">
+                            <img src="https://th.bing.com/th/id/R.41921164a5125add470627e30d1286cc?rik=FzPBS2DwEt5Dfw&pid=ImgRaw&r=0" class="header__nav-item-img" alt="avatar">
+                            <span class="header__nav-item-username">Tran Dat</span>
+                        
+                            <div class="header__nav-usermenu">
+                                <a href="" class="header_nav-user-item">
+                                    My Account
+                                </a>
+                                <a href="" class="header_nav-user-item">
+                                    Puchase
+                                </a>
+                                <a href="" class="header_nav-user-item">
+                                    Log Out
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
 
@@ -86,13 +103,89 @@
                     </div>
                     <div class="header__search-select">
                         <input type="text" class="header__search-input" placeholder="Searching">
+                        <div class="header__search-info">
+                            <div class="header__search-heading">Search history</div>
+                            <li class="header__search-item">
+                                <a class="header__search-previous">Human</a>
+                                <div class="header__search-del">
+                                    <i class="header__search-del-icon fa-solid fa-x"></i>
+                                </div>
+                            </li>
+                            <li class="header__search-item">
+                                <a class="header__search-previous">Warehouse</a>
+                                <div class="header__search-del">
+                                    <i class="header__search-del-icon fa-solid fa-x"></i>
+                                </div>
+                            </li>
+                        </div>
                     </div>
                     <button class="header__search-btn">
                         Seach
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                     <div class="header__cart">
-                        <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                            
+                            <span class="header__cart-notice">2</span>
+                            <!-- Cart layout -->
+                             <!-- Hash .header__cart-no-list-->
+                            <div class="header__cart-list">
+
+                                <!-- If .header__cart-no-list on parent, it show -->
+                                <img src="https://cdn-icons-png.flaticon.com/512/102/102661.png" alt="No cart" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-cart-mess">
+                                    No product
+                                </span>
+                                <!--  -->
+
+                                <h5 class="header__cart-heading">Product Carts</h3>
+                                <div class="header__cart-item">
+                                    <div class="header__cart-img">
+                                        <img src="https://th.bing.com/th/id/OIP.Nia8NcZLgly5CjOqGkokZgHaJO?rs=1&pid=ImgDetMain" alt="Ảnh">
+                                    </div>
+                                    <div class="header__cart-item-content">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-name">Hot Girl</div>
+                                            <div class="cart-item-product">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multily">x</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <div class="header__cart-item-des">Type: Silver</div>
+                                            <div class="header__cart-item-del">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__cart-item">
+                                    <div class="header__cart-img">
+                                        <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-con-gai-1-1.jpg" alt="Ảnh">
+                                    </div>
+                                    <div class="header__cart-item-content">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-name">Beautiful Girl</div>
+                                            <div class="cart-item-product">
+                                                <span class="header__cart-item-price">10.000.000đ</span>
+                                                <span class="header__cart-item-multily">x</span>
+                                                <span class="header__cart-item-qnt">3</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <div class="header__cart-item-des">Type: Gold</div>
+                                            <div class="header__cart-item-del">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="header__cart-btn">See Carts</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
