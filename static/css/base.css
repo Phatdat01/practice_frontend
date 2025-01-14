@@ -14,6 +14,14 @@
     box-sizing: inherit;
 }
 
+.primary-btn{
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-weight: bold;
+    border: solid;
+    cursor: pointer;
+}
+
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
