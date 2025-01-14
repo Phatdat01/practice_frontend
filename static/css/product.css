@@ -20,15 +20,16 @@
 .home-product-item__img{
     background-repeat: no-repeat;
     padding-top: 100%;
-    background-size: contain;
+    margin: 20px;
+    background-size: cover;
     background-position: center;
+    box-shadow: 0 1px 0.2px 0 rgba(0,0,0,0.1);
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 
 .home-product-item__info{
     margin: 10px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    box-shadow: 0 1px 0.2px 0 rgba(0,0,0,0.1);
 }
 
 .home-product-item__name{
@@ -120,7 +121,7 @@
     background: currentColor;
     display: flex;
     top:5px;
-    left: 15px;
+    left: 6px;
     border: 0px;
     padding: 0 4px;
     margin: 4px;
@@ -146,7 +147,7 @@
 .home-product-item__sale-off{
     position: absolute;
     top:-4px;
-    right: 15px;
+    right: 6px;
     padding: 0 3.75px;
     margin: 4px;
     background: yellow;
